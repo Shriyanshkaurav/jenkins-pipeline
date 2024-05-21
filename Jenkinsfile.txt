@@ -1,6 +1,11 @@
 pipeline {
     agent any 
     stages {
+        stage('SCM-CHECKOUT') { 
+            steps {
+                echo "I am in Checkoutstage" 
+            }
+        }
         stage('Build') { 
             steps {
                 echo "I am in build stage" 
